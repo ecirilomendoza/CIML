@@ -3,6 +3,7 @@ output_dir: docs
 delete_merged_file: true
 edit: https://github.com/ecirilomendoza/CIML/edit/master/%s
 view: https://github.com/ecirilomendoza/CIML/blob/master/%s
+rmd_files: ["index.Rmd", "02-tears.Rmd", "03-race.Rmd", "04-hello.Rmd"]
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: " "
