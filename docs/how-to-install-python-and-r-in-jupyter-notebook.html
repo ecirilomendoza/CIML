@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-09-06" />
+<meta name="date" content="2021-09-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="publishing-new-ideas.html"/>
+<link rel="next" href="getting-ready-with-git-github-and-github-desktop.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -139,18 +139,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
 <li class="chapter" data-level="" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html"><i class="fa fa-check"></i>How to install Python and R in Jupyter Notebook?</a>
 <ul>
-<li class="chapter" data-level="0.1" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_1"><i class="fa fa-check"></i><b>0.1</b> Case 1: You have not installed Python before</a>
+<li class="chapter" data-level="0.1" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_1"><i class="fa fa-check"></i><b>0.1</b> Case 1: You have not installed Python, R nor Anaconda before</a>
 <ul>
 <li class="chapter" data-level="0.1.1" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#anaconda"><i class="fa fa-check"></i><b>0.1.1</b> Installing Anaconda</a></li>
-<li class="chapter" data-level="0.1.2" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#environment"><i class="fa fa-check"></i><b>0.1.2</b> Create a new environment in Anaconda to run R and Python</a></li>
-<li class="chapter" data-level="0.1.3" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#ikernel"><i class="fa fa-check"></i><b>0.1.3</b> Install Ikernel to run R in base (default) environment (not creating a new environment)</a></li>
+<li class="chapter" data-level="0.1.2" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#irkernel"><i class="fa fa-check"></i><b>0.1.2</b> R in Jupyter Notebook using IRkernel</a></li>
+<li class="chapter" data-level="0.1.3" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#environment"><i class="fa fa-check"></i><b>0.1.3</b> What if IRkernel does not work? Create a new environment in Anaconda to run R</a></li>
 </ul></li>
-<li class="chapter" data-level="0.2" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_2"><i class="fa fa-check"></i><b>0.2</b> Case 2: You have installed Python or Anaconda before</a>
+<li class="chapter" data-level="0.2" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_2"><i class="fa fa-check"></i><b>0.2</b> Case 2: You have installed Python or Anaconda before (but not R)</a>
 <ul>
 <li class="chapter" data-level="0.2.1" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#Py_A"><i class="fa fa-check"></i><b>0.2.1</b> You just have Python installed but no Anaconda</a></li>
 <li class="chapter" data-level="0.2.2" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#justA"><i class="fa fa-check"></i><b>0.2.2</b> You have Anaconda installed</a></li>
 </ul></li>
+<li class="chapter" data-level="0.3" data-path="how-to-install-python-and-r-in-jupyter-notebook.html"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_3"><i class="fa fa-check"></i><b>0.3</b> Case 3: You have installed R before (but not Python or Anaconda)</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="getting-ready-with-git-github-and-github-desktop.html"><a href="getting-ready-with-git-github-and-github-desktop.html"><i class="fa fa-check"></i>Getting ready with Git, GitHub, and GitHub Desktop</a></li>
 <li class="chapter" data-level="1" data-path="publishing-new-ideas.html"><a href="publishing-new-ideas.html"><i class="fa fa-check"></i><b>1</b> Publishing new ideas</a></li>
 <li class="chapter" data-level="2" data-path="graphs.html"><a href="graphs.html"><i class="fa fa-check"></i><b>2</b> Graphs</a></li>
 <li class="divider"></li>
@@ -175,24 +177,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="how-to-install-python-and-r-in-jupyter-notebook" class="section level1 unnumbered">
 <h1>How to install Python and R in Jupyter Notebook?</h1>
-<p>To make it easier, we have prepared a series of cases for you to identify and proceed with a successful installation.</p>
+<p>To make it easier, we have prepared a series of cases for you to identify and proceed with a successful installation. Experience has shown us that the <em>golden rule</em> to run Python and R in Jupyter Notebook is to work with the <a href="https://irkernel.github.io/installation/#windows-panel">IRkernel</a> for R.</p>
 <ul>
-<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_1">Case 1: You have not installed Python before</a>
+<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_1">Case 1: You have not installed Python, R nor Anaconda before</a>
 <ul>
-<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#anaconda">I. Installing Anaconda</a>
+<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#anaconda">I. Python in Jupyter Notebook: Installing Anaconda</a></li>
+<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#irkernel">II. R in Jupyter Notebook using IRkernel</a>
 <ul>
-<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#environment">A. Create a new environment in Anaconda to run R and Python</a></li>
-<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#ikernel">B. Install Ikernel to run R in base (default) environment (not creating a new environment)</a></li>
+<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#environment">What if IRkernel does not work? Create a new environment in Anaconda to run R</a></li>
 </ul></li>
 </ul></li>
-<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_2">Case 2: You have installed Python or Anaconda before</a>
+<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_2">Case 2: You have installed Python or Anaconda before (but not R)</a>
 <ul>
 <li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#Py_A">I. You just have Python installed but no Anaconda</a></li>
 <li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#justA">II. You have Anaconda installed</a></li>
 </ul></li>
+<li><a href="how-to-install-python-and-r-in-jupyter-notebook.html#case_3">Case 3: You have installed R before (but not Python or Anaconda)</a></li>
 </ul>
 <div id="case_1" class="section level2" number="0.1">
-<h2><span class="header-section-number">0.1</span> Case 1: You have not installed Python before</h2>
+<h2><span class="header-section-number">0.1</span> Case 1: You have not installed Python, R nor Anaconda before</h2>
 <p>We will install Anaconda first and then set up features to run R in Jupyter.</p>
 <div id="anaconda" class="section level3" number="0.1.1">
 <h3><span class="header-section-number">0.1.1</span> Installing Anaconda</h3>
@@ -204,14 +207,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>The next is step is critical. In order to correctly install Anaconda for our purposes, choose <strong>NOT</strong> to add Anaconda to your PATH environment variable. It is also a <a href="https://docs.anaconda.com/anaconda/install/windows/">recommendation</a> from Anaconda. About the second option, select “Register Anaconda3 as my default Python 3.7”.
 <img src="https://docs.anaconda.com/_images/win-install-options.png" alt="Imagen" /></p></li>
 <li><p>Finally, click the Install button, and wait for a bit. After a successful installation, “Thanks for installing Anaconda” will pop up.</p></li>
-<li><p>After installing, you will see a new program installed on your PC by typing “Anaconda” on Windows.
-<img src="https://docs.anaconda.com/_images/win-navigator.png" alt="Imagen_2" /></p></li>
+<li><p>After installing, you will see a new program installed on your PC by typing “Anaconda” on Windows.</p></li>
 </ol>
-<p>After installing Anaconda, we will configure the necessary options to be able to run R in a Jupyter Notebook. To do so, we have two options:</p>
+<div style="text-align:center">
+<img src="https://docs.anaconda.com/_images/win-navigator.png" />
+</div>
+<p><br/></p>
+<p>After installing Anaconda, we will configure the necessary options to be able to run R in a Jupyter Notebook.</p>
 <p><br/></p>
 </div>
-<div id="environment" class="section level3" number="0.1.2">
-<h3><span class="header-section-number">0.1.2</span> Create a new environment in Anaconda to run R and Python</h3>
+<div id="irkernel" class="section level3" number="0.1.2">
+<h3><span class="header-section-number">0.1.2</span> R in Jupyter Notebook using IRkernel</h3>
+<p>This option is the golden rule since you will have the lastest version of R running, which is important for compatibility reasons. In this option, you will install some packages in R to make the kernel available to Jupyter Notebook. It can be accomplished by following these steps:</p>
+<p><br/></p>
+<blockquote>
+<p><strong><em>Important:</em></strong>
+This option requires R to have been previously installed. We highly recommend you to install from its official web page <a href="https://cran.r-project.org/bin/windows/base/">CRAN</a>. When installing R, use the default options.</p>
+</blockquote>
+<p><br/></p>
+<ol style="list-style-type: decimal">
+<li><p>Firstly you will need to start R terminal. To do so, search the folder where you install R previously. In this case, we have R in <code>C:\Program Files\R\R-4.1.1\bin</code>. It will typically be there or in “Usuarios”.
+<img src="figs/Rprompt.png"></p></li>
+<li><p>Open the Anaconda prompt. Then type <code>cd</code> (your directory) such as:</p></li>
+</ol>
+<pre><code>    cd C:\Program Files\R\R-4.1.1\bin </code></pre>
+<p>It will set the directory to use R. So, type R to start.
+<img src="figs/Rprompt_2.PNG"></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>After that, we will install packages to use a function that makes the kernel available to Jupyter using <a href="https://irkernel.github.io/installation/#windows-panel">IRKernel</a>.</p></li>
+<li><p>Install the following packages by typing:</p></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&#39;repr&#39;</span>, <span class="st">&#39;IRdisplay&#39;</span>, <span class="st">&#39;IRkernel&#39;</span>), <span class="at">type =</span> <span class="st">&#39;source&#39;</span>)</span></code></pre></div>
+<ol start="4" style="list-style-type: decimal">
+<li>It will open a CRAN mirror. Choose “USA (OR) (https)”. After installing, type the following to allow the kernel spec can be installed for the current user.</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#cb3-1" aria-hidden="true" tabindex="-1"></a>IRkernel<span class="sc">::</span><span class="fu">installspec</span>()</span></code></pre></div>
+<ol start="5" style="list-style-type: decimal">
+<li>Follow step 6 of section <a href="how-to-install-python-and-r-in-jupyter-notebook.html#anaconda">0.1.1</a> to launch Jupyter Notebook.</li>
+</ol>
+<p><br/></p>
+</div>
+<div id="environment" class="section level3" number="0.1.3">
+<h3><span class="header-section-number">0.1.3</span> What if IRkernel does not work? Create a new environment in Anaconda to run R</h3>
+<p>It is important to keep in mind that they should use this option as the last one, because Anaconda uses an old version of R. We highly recommend applying the IRkernel steps in the previous section <a href="how-to-install-python-and-r-in-jupyter-notebook.html#irkernel">0.1.2</a>. To create a new environment to run R, follow these steps:</p>
 <ol style="list-style-type: decimal">
 <li><p>Open Anaconda Navigator.
 <img src="figs/open_anaconda_navigator.png"></p></li>
@@ -239,45 +277,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p><br/></p>
 </div>
-<div id="ikernel" class="section level3" number="0.1.3">
-<h3><span class="header-section-number">0.1.3</span> Install Ikernel to run R in base (default) environment (not creating a new environment)</h3>
-<p>The second option is to install some packages in R to make the kernel available to Jupyter Notebook. It can be accomplished by following these steps:</p>
-<p><br/></p>
-<blockquote>
-<p><strong><em>Important:</em></strong> This option requires R to have been previously installed.</p>
-</blockquote>
-<p><br/></p>
-<ol style="list-style-type: decimal">
-<li><p>Firstly you will need to start R terminal. To do so, search the folder where you install R previously. In this case, we have R in <code>C:Files.1</code> . It will typically be there or in “Usuarios”.
-<img src="figs/Rprompt.png"></p></li>
-<li><p>Open the Anaconda prompt. Then type <code>cd</code> (your directory) such as:</p></li>
-</ol>
-<pre><code>    cd C:\Program Files\R\R-4.1.1\bin </code></pre>
-<p>It will set the directory to use R. So, type R to start.
-<img src="figs/Rprompt_2.PNG"></p>
-<ol start="3" style="list-style-type: decimal">
-<li><p>After that, we will install packages to use a function that makes the kernel available to Jupyter using <a href="https://irkernel.github.io/installation/#windows-panel">IRKernel</a>.</p></li>
-<li><p>Install the following packages by typing:</p></li>
-</ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">&#39;repr&#39;</span>, <span class="st">&#39;IRdisplay&#39;</span>, <span class="st">&#39;IRkernel&#39;</span>), <span class="at">type =</span> <span class="st">&#39;source&#39;</span>)</span></code></pre></div>
-<ol start="4" style="list-style-type: decimal">
-<li>It will open a CRAN mirror. Choose “USA (OR) (https)”. After installing, type the following to allow the kernel spec can be installed for the current user.</li>
-</ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="how-to-install-python-and-r-in-jupyter-notebook.html#cb3-1" aria-hidden="true" tabindex="-1"></a>IRkernel<span class="sc">::</span><span class="fu">installspec</span>()</span></code></pre></div>
-<ol start="5" style="list-style-type: decimal">
-<li>Follow step 6 of section <a href="how-to-install-python-and-r-in-jupyter-notebook.html#anaconda">0.1.1</a> to launch Jupyter Notebook.</li>
-</ol>
-<p><br/></p>
-</div>
 </div>
 <div id="case_2" class="section level2" number="0.2">
-<h2><span class="header-section-number">0.2</span> Case 2: You have installed Python or Anaconda before</h2>
-<p>Anaconda is an open-source distributor of Python and R. It aims to simplify package management and deployment. The packages are managed by conda system. It means it make your life easier when installing basic packages such as <code>numpy</code> or <code>pandas</code>. Therefore, it would be a lot easier to use Anaconda.</p>
+<h2><span class="header-section-number">0.2</span> Case 2: You have installed Python or Anaconda before (but not R)</h2>
+<p>Anaconda is an open-source distributor of Python and R. It aims to simplify package management and deployment. The packages are managed by <em>conda</em> system. It means it make your life easier when installing basic packages such as <code>numpy</code> or <code>pandas</code>. Therefore, we recommend using Anaconda as it would be straightforward.</p>
 <p><br/></p>
 <blockquote>
 <p><strong><em>Recommendations:</em></strong></p>
 <ol style="list-style-type: decimal">
-<li>We highly recommend uninstalling Python completely. Even some folders left can cause problems with packages in the future. So make sure you have no folders named “Python” or “Anaconda”.</li>
+<li>If you have Python installed, we highly recommend uninstalling it completely. Even some folders left can cause problems with packages in the future. So make sure you have no folders named “Python” or “Anaconda” after uninstall.</li>
 <li>To uninstall Python or Anaconda correctly, it should be done from the control panel.</li>
 </ol>
 </blockquote>
@@ -289,19 +297,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="justA" class="section level3" number="0.2.2">
 <h3><span class="header-section-number">0.2.2</span> You have Anaconda installed</h3>
-<p>We encourage you to uninstall Anaconda completely in order to set configurations correctly. To do so, Make sure you uninstall Anaconda correctly by following these <a href="https://docs.anaconda.com/anaconda/install/uninstall/">steps</a>. Even folders left can cause problems with packages in the future. So make sure you have no folders named “Python” or “Anaconda”.</p>
+<p>We encourage you to uninstall Anaconda completely in order to set configurations correctly (check section <a href="how-to-install-python-and-r-in-jupyter-notebook.html#anaconda">0.1.1</a>). To do so, make sure you uninstall Anaconda correctly by following these <a href="https://docs.anaconda.com/anaconda/install/uninstall/">steps</a>. Even folders left can cause problems with packages in the future. So make sure you have no folders named “Python” or “Anaconda” after uninstall.</p>
 <p>If you prefer to keep Anaconda as you installed it in the past, <strong>make sure you don’t have Anaconda added to your <code>PATH</code> environment, because you could have problems creating a new environment.</strong></p>
 <p><br/></p>
 <blockquote>
 <p><strong><em>Recommendations:</em></strong></p>
 <ol style="list-style-type: decimal">
-<li>Uninstall Anaconda completely in order to set configurations correctly. Even folders left can cause problems with packages in the future. So make sure you have no folders named “Python” or “Anaconda”.</li>
+<li>Uninstall Anaconda completely in order to set configurations correctly. Even folders left can cause problems with packages in the future. So make sure you have no folders named “Python” or “Anaconda” after uninstall.</li>
 <li>To uninstall Python or Anaconda correctly, it should be done from the control panel.</li>
 <li>Make sure Anaconda <strong>IS NOT</strong> added to your <code>PATH</code> environment, because you could have problems creating a new environment.</li>
 </ol>
 </blockquote>
-
+<p><br/></p>
+<p>After installing Anaconda following the explained steps, you must install R from <a href="https://cran.r-project.org/bin/windows/base/">CRAN</a> as section <a href="how-to-install-python-and-r-in-jupyter-notebook.html#irkernel">0.1.2</a> proposes. Just in the case where the kernel doesn’t work, try the section <a href="how-to-install-python-and-r-in-jupyter-notebook.html#environment">0.1.3</a>.</p>
+<p><br/></p>
 </div>
+</div>
+<div id="case_3" class="section level2" number="0.3">
+<h2><span class="header-section-number">0.3</span> Case 3: You have installed R before (but not Python or Anaconda)</h2>
+<p>If you have installed R before, try using <a href="https://irkernel.github.io/installation/#windows-panel">IRkernel</a> as section <a href="how-to-install-python-and-r-in-jupyter-notebook.html#irkernel">0.1.2</a> proposes. After that, install Anaconda through Python as section <a href="how-to-install-python-and-r-in-jupyter-notebook.html#anaconda">0.1.1</a> explains.</p>
 </div>
 </div>
             </section>
@@ -310,7 +324,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="publishing-new-ideas.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="getting-ready-with-git-github-and-github-desktop.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
