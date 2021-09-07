@@ -1,5 +1,5 @@
 # Publishing new ideas
-
+# Este el primer comentario de Ale
 
 $$X = \begin{bmatrix}1 & x_{1}\\
 1 & x_{2}\\
