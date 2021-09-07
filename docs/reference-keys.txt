@@ -1,9 +1,10 @@
 case_1
 anaconda
+irkernel
 environment
-ikernel
 case_2
 Py_A
 justA
+case_3
 publishing-new-ideas
 graphs

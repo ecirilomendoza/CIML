@@ -1,21 +1,24 @@
 How to install Python and R in Jupyter Notebook? {-}
 ====================================================
  
-To make it easier, we have prepared a series of cases for you to identify  and proceed with a successful installation.
+To make it easier, we have prepared a series of cases for you to identify and proceed with a successful installation. Experience has shown us that the *golden rule* to run Python and R in Jupyter Notebook is to work with the [IRkernel](https://irkernel.github.io/installation/#windows-panel) for R.
 
-- [Case 1: You have not installed Python before](#case_1)
-  * [I. Installing Anaconda](#anaconda)
-    + [A. Create a new environment in Anaconda to run R and Python](#environment)
-    + [B. Install Ikernel to run R in base (default) environment (not creating a new environment)](#ikernel)
-- [Case 2: You have installed Python or Anaconda before](#case_2)
+- [Case 1: You have not installed Python, R nor Anaconda before](#case_1)
+  * [I. Python in Jupyter Notebook: Installing Anaconda](#anaconda)
+  * [II. R in Jupyter Notebook using IRkernel](#irkernel)
+    + [What if IRkernel does not work? Create a new environment in Anaconda to run R](#environment)
+    
+- [Case 2: You have installed Python or Anaconda before (but not R)](#case_2)
   * [I. You just have Python installed but no Anaconda](#Py_A)
   * [II. You have Anaconda installed](#justA)
 
+- [Case 3: You have installed R before (but not Python or Anaconda)](#case_3)
 
-Case 1: You have not installed Python before {#case_1}
-----------------------------------------------------------
 
-We will install Anaconda first and then set up  features to run R in Jupyter. 
+Case 1: You have not installed Python, R nor Anaconda before {#case_1}
+-----------------------------------------------------------------------
+
+We will install Anaconda first and then set up features to run R in Jupyter. 
 
 ### Installing Anaconda {#anaconda}
 
@@ -32,13 +35,63 @@ Follow these steps to install Anaconda correctly:
 5. Finally, click the Install button, and wait for a bit. After a successful installation, “Thanks for installing Anaconda” will pop up.
 
 6. After installing, you will see a new program installed on your PC by typing "Anaconda" on Windows.
-![Imagen_2](https://docs.anaconda.com/_images/win-navigator.png)
 
-After installing Anaconda, we will configure the necessary options to be able to run R in a Jupyter Notebook. To do so, we have two options:
+<div style="text-align:center"><img src="https://docs.anaconda.com/_images/win-navigator.png" /></div>
 
 <br/>
 
-### Create a new environment in Anaconda to run R and Python {#environment}
+After installing Anaconda, we will configure the necessary options to be able to run R in a Jupyter Notebook.
+
+<br/>
+
+
+### R in Jupyter Notebook using IRkernel {#irkernel}
+This option is the golden rule since you will have the lastest version of R running, which is important for compatibility reasons. In this option, you will  install some packages in R to make the kernel available to Jupyter Notebook. It can be accomplished by following these steps:
+
+<br/>
+
+> **_Important:_** 
+> This option requires R to have been previously installed. We highly recommend you to install from its official web page [CRAN](https://cran.r-project.org/bin/windows/base/). When installing R, use the default options.
+
+<br/>
+
+1. Firstly you will need to start R terminal. To do so, search the folder where you install R previously. In this case, we have R in ```C:\Program Files\R\R-4.1.1\bin```. It will typically be there or in "Usuarios".
+<img src="figs/Rprompt.png">
+
+2. Open the Anaconda prompt. Then type <code>cd</code> (your directory) such as:
+
+```
+    cd C:\Program Files\R\R-4.1.1\bin 
+```
+
+It will set the directory to use R. So, type R to start.
+<img src="figs/Rprompt_2.PNG">
+
+3.  After that, we will install packages to use a function that makes the kernel available to Jupyter using [IRKernel](https://irkernel.github.io/installation/#windows-panel). 
+
+4. Install the following packages by typing:
+
+```{r eval=FALSE}
+install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')
+```
+
+
+4. It will open a CRAN mirror. Choose "USA (OR) (https)". After installing, type the following to allow the kernel spec can be installed for the current user.
+
+
+```{r eval=FALSE}
+IRkernel::installspec()
+```
+
+5. Follow step 6 of section \@ref(anaconda) to launch Jupyter Notebook.
+
+<br/>
+
+
+
+### What if IRkernel does not work? Create a new environment in Anaconda to run R {#environment}
+
+It is important to keep in mind that they should use this option as the last one, because Anaconda uses an old version of R. We highly recommend applying the IRkernel steps in the previous section \@ref(irkernel). To create a new environment to run R, follow these steps:
 
 1. Open Anaconda Navigator.
 <img src="figs/open_anaconda_navigator.png">
@@ -71,57 +124,17 @@ After installing Anaconda, we will configure the necessary options to be able to
 
 <br/>
 
-### Install Ikernel to run R in base (default) environment (not creating a new environment) {#ikernel}
-The second option is to install some packages in R to make the kernel available to Jupyter Notebook. It can be accomplished by following these steps:
 
-<br/>
+Case 2: You have installed Python or Anaconda before (but not R) {#case_2}
+---------------------------------------------------------------------------
 
-> **_Important:_** This option requires R to have been previously installed.
-
-<br/>
-
-1. Firstly you will need to start R terminal. To do so, search the folder where you install R previously. In this case, we have R in <code>C:\Program Files\R\R-4.1.1\bin</code> . It will typically be there or in "Usuarios".
-<img src="figs/Rprompt.png">
-
-2. Open the Anaconda prompt. Then type <code>cd</code> (your directory) such as:
-
-```
-    cd C:\Program Files\R\R-4.1.1\bin 
-```
-
-It will set the directory to use R. So, type R to start.
-<img src="figs/Rprompt_2.PNG">
-
-3.  After that, we will install packages to use a function that makes the kernel available to Jupyter using [IRKernel](https://irkernel.github.io/installation/#windows-panel). 
-
-4. Install the following packages by typing:
-
-```{r eval=FALSE}
-install.packages(c('repr', 'IRdisplay', 'IRkernel'), type = 'source')
-```
-
-
-4. It will open a CRAN mirror. Choose "USA (OR) (https)". After installing, type the following to allow the kernel spec can be installed for the current user.
-
-
-```{r eval=FALSE}
-IRkernel::installspec()
-```
-
-5. Follow step 6 of section \@ref(anaconda) to launch Jupyter Notebook.
-
-<br/>
-
-Case 2: You have installed Python or Anaconda before {#case_2}
-------------------------------------------------------------------
-
-Anaconda is an open-source distributor of Python and R. It aims to simplify package management and deployment. The packages are managed by conda system. It means it make your life easier when installing basic packages such as <code>numpy</code> or <code>pandas</code>. Therefore, it would be a lot easier to use Anaconda. 
+Anaconda is an open-source distributor of Python and R. It aims to simplify package management and deployment. The packages are managed by *conda* system. It means it make your life easier when installing basic packages such as <code>numpy</code> or <code>pandas</code>. Therefore, we recommend using Anaconda as it would be straightforward. 
 
 <br/>
 
 > **_Recommendations:_** 
 >
-> 1. We highly recommend uninstalling Python completely. Even some folders left can cause problems with packages in the future. So make sure you have no folders named "Python" or "Anaconda".
+> 1. If you have Python installed, we highly recommend uninstalling it completely. Even some folders left can cause problems with packages in the future. So make sure you have no folders named "Python" or "Anaconda" after uninstall.
 > 2. To uninstall Python or Anaconda correctly, it should be done from the control panel.
 
 <br/>
@@ -134,7 +147,7 @@ If you have Python installed, we encourage you to change it to Anaconda, which a
 
 ### You have Anaconda installed {#justA}
 
-We encourage you to uninstall Anaconda completely in order to set configurations correctly. To do so, Make sure you uninstall Anaconda correctly by following these [steps](https://docs.anaconda.com/anaconda/install/uninstall/). Even folders left can cause problems with packages in the future. So make sure you have no folders named "Python" or "Anaconda".
+We encourage you to uninstall Anaconda completely in order to set configurations correctly (check section \@ref(anaconda)). To do so, make sure you uninstall Anaconda correctly by following these [steps](https://docs.anaconda.com/anaconda/install/uninstall/). Even folders left can cause problems with packages in the future. So make sure you have no folders named "Python" or "Anaconda" after uninstall.
 
 If you prefer to keep Anaconda as you installed it in the past, **make sure you don't have Anaconda added to your <code>PATH</code> environment, because you could have problems creating a new environment.**
 
@@ -142,6 +155,21 @@ If you prefer to keep Anaconda as you installed it in the past, **make sure you 
 
 > **_Recommendations:_**
 >
-> 1. Uninstall Anaconda completely in order to set configurations correctly. Even folders left can cause problems with packages in the future. So make sure you have no folders named "Python" or "Anaconda".
+> 1. Uninstall Anaconda completely in order to set configurations correctly. Even folders left can cause problems with packages in the future. So make sure you have no folders named "Python" or "Anaconda" after uninstall.
 > 2. To uninstall Python or Anaconda correctly, it should be done from the control panel.
 > 3. Make sure Anaconda **IS NOT** added to your <code>PATH</code> environment, because you could have problems creating a new environment.
+
+<br/>
+
+After installing Anaconda following the explained steps, you must install R from [CRAN](https://cran.r-project.org/bin/windows/base/) as section \@ref(irkernel) proposes. Just in the case where the kernel doesn't work, try the section  \@ref(environment).
+
+<br/>
+
+Case 3: You have installed R before (but not Python or Anaconda) {#case_3}
+---------------------------------------------------------------------------
+
+If you have installed R before, try using [IRkernel](https://irkernel.github.io/installation/#windows-panel) as section \@ref(irkernel) proposes. After that, install Anaconda through Python as section \@ref(anaconda) explains.
+
+
+Getting ready with Git, GitHub, and GitHub Desktop {-}
+================================================================================
