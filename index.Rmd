@@ -1,9 +1,18 @@
 --- 
-title: "A new book"
-author: "Elibeth Cirilo"
+title: "Causal Inference and Machine Learning"
+author: " "
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+documentclass: book
+biblio-style: apalike
+description: > 
+  This cookbook contains theory and code about Causal Inference in Machine Learning. The code provided is in R and Python.
+#github-repo: wch/rgcookbook
+#twitter-handle: winston_chang
+#cover-image: cover.jpg
 ---
 
-# Coming up with new ideas
+# Welcome {-}
 
+
+Welcome to the **Causal Inference and Machine Learning** class, a practical book that provides code in R and Python to guide you through machine learning topics. We will lead you since the installation process to the solution of relevant documents in Machine Learning. Hope you enjoy.
