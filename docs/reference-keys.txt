@@ -1,4 +1,9 @@
-materializing-new-ideas
-how-can-i-display-good-appealing-graphs
+case_1
+anaconda
+environment
+ikernel
+case_2
+Py_A
+justA
 publishing-new-ideas
 graphs
